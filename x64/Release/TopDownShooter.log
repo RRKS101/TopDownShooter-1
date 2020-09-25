@@ -1,0 +1,18 @@
+﻿  main.cpp
+C:\Users\the4g\source\repos\TopDownShooter\FacingComponent.h(25,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\the4g\source\repos\TopDownShooter\Game.h(43,1): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\the4g\source\repos\TopDownShooter\Game.h(44,1): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+  Generating code
+  1 of 387 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  TopDownShooter.vcxproj -> C:\Users\the4g\source\repos\TopDownShooter\x64\Release\TopDownShooter.exe

@@ -22,6 +22,12 @@
     <Filter Include="Header Files\Guns">
       <UniqueIdentifier>{445af03c-2e66-4810-a80a-3b1b917c1a41}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Functions">
+      <UniqueIdentifier>{5cc21daf-9b4d-4854-8109-59c2991e0454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Base Classes">
+      <UniqueIdentifier>{07e33e21-abd2-471e-9a95-927d8d3085ab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -29,12 +35,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BaseComponent.h">
-      <Filter>Resource Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Entity.h">
-      <Filter>Resource Files</Filter>
-    </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -52,6 +52,15 @@
     </ClInclude>
     <ClInclude Include="Definitions.h">
       <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Resource Files\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseComponent.h">
+      <Filter>Resource Files\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="VecMath.h">
+      <Filter>Resource Files\Functions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

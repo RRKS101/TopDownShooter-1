@@ -1,6 +1,5 @@
 #pragma once
 #include "BaseComponent.h"
-#include "Entity.h"
 
 class KeyboardInputComponent : public BaseComponent
 {

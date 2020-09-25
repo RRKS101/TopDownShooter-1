@@ -1,0 +1,4 @@
+C:\Users\the4g\source\repos\TopDownShooter\x64\Debug\TopDownShooter.exe
+C:\Users\the4g\source\repos\TopDownShooter\x64\Debug\TopDownShooter.pdb
+C:\Users\the4g\Documents\GitHub\TopDownShooter-1\x64\Debug\TopDownShooter.exe
+C:\Users\the4g\Documents\GitHub\TopDownShooter-1\x64\Debug\TopDownShooter.pdb
