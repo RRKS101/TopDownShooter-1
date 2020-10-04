@@ -1,5 +1,5 @@
 #pragma once
-#include "BaseComponent.h"
+#include "Player.h"
 
 class KeyboardInputComponent : public BaseComponent
 {

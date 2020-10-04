@@ -1,6 +1,5 @@
 #pragma once
-#include "Player.h"
-#include "FacingComponent.h"
+#include "PlayerModelFacingComponent.h"
 class Game 
 {
 private:
@@ -34,7 +33,7 @@ public:
 
 		p->addComponent("KeybordInput", new KeyboardInputComponent(p));
 		p->addComponent("ScreenBounder", new ScreenBounder(p));
-		p->addComponent("FaceTarget", new FacingComponent(p));
+		p->addComponent("FaceTarget", new PlayerModelFacingComponent(p));
 
 		//p->addComponent("move_manager", &ApplyMoveComponent(p));
 

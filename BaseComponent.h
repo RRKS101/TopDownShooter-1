@@ -1,5 +1,5 @@
 #pragma once
-#include "Definitions.h"
+#include "VecMath.h"
 
 class Entity;
 class BaseComponent

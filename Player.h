@@ -1,6 +1,5 @@
 #pragma once
 #include "Entity.h"
-#include "BaseComponent.h"
 
 class Player : public Entity
 {
@@ -31,7 +30,7 @@ public:
 	
 	virtual void Update() 
 	{
-		this->setTarget((sf::Vector2f)sf::Mouse::getPosition());
+		this->setTarget((sf::Vector2f)sf::Mouse::getPosition(*this->Window));
 
 		setVel(getVel() + getAccel());
 		setPos(getPos() + getVel());

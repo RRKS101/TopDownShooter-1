@@ -1,6 +1,6 @@
 #pragma once
 #include "BaseComponent.h"
-#include "VecMath.h"
+
 class Entity 
 {
 private:

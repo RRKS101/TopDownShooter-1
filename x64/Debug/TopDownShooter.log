@@ -1,7 +1,6 @@
-﻿  main.cpp
-C:\Users\the4g\Documents\GitHub\TopDownShooter-1\VecMath.h(19,20): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\the4g\Documents\GitHub\TopDownShooter-1\FacingComponent.h(26,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\the4g\Documents\GitHub\TopDownShooter-1\FacingComponent.h(32,50): warning C4244: '=': conversion from 'const T' to 'T', possible loss of data
+﻿  PlayerModelFacingComponent.h
+C:\Users\the4g\Documents\GitHub\TopDownShooter-1\VecMath.h(7,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\the4g\Documents\GitHub\TopDownShooter-1\PlayerModelFacingComponent.h(38,50): warning C4244: '=': conversion from 'const T' to 'T', possible loss of data
           with
           [
               T=float
@@ -10,7 +9,7 @@ C:\Users\the4g\Documents\GitHub\TopDownShooter-1\FacingComponent.h(32,50): warni
           [
               T=int
           ]
-C:\Users\the4g\Documents\GitHub\TopDownShooter-1\FacingComponent.h(34,32): warning C4244: '=': conversion from 'const T' to 'T', possible loss of data
+C:\Users\the4g\Documents\GitHub\TopDownShooter-1\PlayerModelFacingComponent.h(42,51): warning C4244: '=': conversion from 'const T' to 'T', possible loss of data
           with
           [
               T=float
@@ -18,15 +17,5 @@ C:\Users\the4g\Documents\GitHub\TopDownShooter-1\FacingComponent.h(34,32): warni
           and
           [
               T=int
-          ]
-C:\Users\the4g\Documents\GitHub\TopDownShooter-1\Game.h(43,1): warning C4305: 'argument': truncation from 'double' to 'T'
-          with
-          [
-              T=float
-          ]
-C:\Users\the4g\Documents\GitHub\TopDownShooter-1\Game.h(44,1): warning C4305: 'argument': truncation from 'double' to 'T'
-          with
-          [
-              T=float
           ]
   TopDownShooter.vcxproj -> C:\Users\the4g\Documents\GitHub\TopDownShooter-1\x64\Debug\TopDownShooter.exe
