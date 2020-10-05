@@ -1,21 +1,11 @@
 ﻿  PlayerModelFacingComponent.h
-C:\Users\the4g\Documents\GitHub\TopDownShooter-1\VecMath.h(7,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\the4g\Documents\GitHub\TopDownShooter-1\PlayerModelFacingComponent.h(38,50): warning C4244: '=': conversion from 'const T' to 'T', possible loss of data
+C:\Users\the4g\Documents\GitHub\TopDownShooter-1\BaseFacingComponent.h(23,14): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  main.cpp
+C:\Users\the4g\Documents\GitHub\TopDownShooter-1\BaseFacingComponent.h(23,14): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\the4g\Documents\GitHub\TopDownShooter-1\Game.h(38,1): warning C4305: 'argument': truncation from 'double' to 'T'
           with
           [
               T=float
           ]
-          and
-          [
-              T=int
-          ]
-C:\Users\the4g\Documents\GitHub\TopDownShooter-1\PlayerModelFacingComponent.h(42,51): warning C4244: '=': conversion from 'const T' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-          and
-          [
-              T=int
-          ]
+  Generating Code...
   TopDownShooter.vcxproj -> C:\Users\the4g\Documents\GitHub\TopDownShooter-1\x64\Debug\TopDownShooter.exe

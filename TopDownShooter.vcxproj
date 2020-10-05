@@ -150,6 +150,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseComponent.h" />
+    <ClInclude Include="BaseGun.h" />
+    <ClInclude Include="BaseMelee.h" />
+    <ClInclude Include="BaseWeapon.h" />
     <ClInclude Include="Definitions.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="BaseFacingComponent.h" />

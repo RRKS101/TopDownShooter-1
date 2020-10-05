@@ -22,6 +22,8 @@ private:
 				else if (i.first == "RIGHT") owner->setAccel(owner->getAccel() + sf::Vector2f(owner->getRateAccel().x, 0.0f));
 			}
 		}
+
+
 	}
 
 	void CapSpeed() 
@@ -30,6 +32,11 @@ private:
 		else if (owner->getVel().x < -owner->getMaxVel().x) owner->setVel(sf::Vector2f(-owner->getMaxVel().x, owner->getVel().y));
 		if (owner->getVel().y > owner->getMaxVel().y) owner->setVel(sf::Vector2f(owner->getVel().x, owner->getMaxVel().y));
 		else if (owner->getVel().y < -owner->getMaxVel().y) owner->setVel(sf::Vector2f(owner->getVel().x, -owner->getMaxVel().y));
+		
+		if (owner->getAccel().x > owner->getMaxAccel().x) owner->setAccel(sf::Vector2f(owner->getMaxAccel().x, owner->getAccel().y));
+		else if (owner->getAccel().x < -owner->getMaxAccel().x) owner->setAccel(sf::Vector2f(-owner->getMaxAccel().x, owner->getAccel().y));
+		if (owner->getAccel().y > owner->getMaxAccel().y) owner->setAccel(sf::Vector2f(owner->getAccel().x, owner->getMaxAccel().y));
+		else if (owner->getAccel().y < -owner->getMaxAccel().y) owner->setAccel(sf::Vector2f(owner->getAccel().x, -owner->getMaxAccel().y));
 	}
 
 public:
@@ -38,7 +45,7 @@ public:
 	virtual ~KeyboardInputComponent() {}
 
 
-	virtual void Update() 
+	virtual void Update(float dt) 
 	{
 		ApplyFriction();
 		ApplyKeypress();

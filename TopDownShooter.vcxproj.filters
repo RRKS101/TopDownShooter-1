@@ -28,6 +28,9 @@
     <Filter Include="Resource Files\Base Classes">
       <UniqueIdentifier>{07e33e21-abd2-471e-9a95-927d8d3085ab}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Knives">
+      <UniqueIdentifier>{1253778b-7738-45dc-9125-718185e034eb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -50,9 +53,6 @@
     <ClInclude Include="ScreenBounder.h">
       <Filter>Header Files\Components</Filter>
     </ClInclude>
-    <ClInclude Include="Definitions.h">
-      <Filter>Resource Files</Filter>
-    </ClInclude>
     <ClInclude Include="Entity.h">
       <Filter>Resource Files\Base Classes</Filter>
     </ClInclude>
@@ -64,6 +64,18 @@
     </ClInclude>
     <ClInclude Include="BaseFacingComponent.h">
       <Filter>Resource Files\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseWeapon.h">
+      <Filter>Resource Files\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseGun.h">
+      <Filter>Resource Files\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseMelee.h">
+      <Filter>Resource Files\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Definitions.h">
+      <Filter>Resource Files\Functions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

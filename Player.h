@@ -4,11 +4,11 @@
 class Player : public Entity
 {
 protected:
-	void UpdateComponents() 
+	void UpdateComponents(float dt) 
 	{ 
 		for (auto i : this->components) 
-		{ 
-			i.second->Update();
+		{
+			i.second->Update(dt);
 		} 
 	}
 
@@ -28,14 +28,14 @@ public:
 	
 	}
 	
-	virtual void Update() 
+	virtual void Update(float dt) 
 	{
 		this->setTarget((sf::Vector2f)sf::Mouse::getPosition(*this->Window));
 
-		setVel(getVel() + getAccel());
-		setPos(getPos() + getVel());
+		setVel(getVel() + getAccel() * dt);
+		setPos(getPos() + getVel() * dt);
 
-		UpdateComponents();
+		UpdateComponents(dt);
 
 		
 		this->shape.setPosition(this->getPos());

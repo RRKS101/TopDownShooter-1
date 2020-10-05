@@ -18,10 +18,12 @@ protected:
 
 	sf::RectangleShape shape;
 	sf::Texture *tex;
+	std::string texLabel;
 
 	sf::RenderWindow* Window;
 
 	std::map<std::string, BaseComponent*> components;
+	std::map<std::string, sf::Texture*> textures;
 	std::map<std::string, sf::Keyboard::Key> kbb;
 
 	sf::Vector2f target;
@@ -51,7 +53,7 @@ public:
 	virtual void setRateDecel(sf::Vector2f n) { this->rate_decel = n; }
 	virtual sf::Vector2f getRateDecel() { return this->rate_decel; }
 
-	virtual void setTexture(sf::Texture* t) { this->tex = t; }
+	virtual void setTexture(std::string label) { this->tex = this->textures[label]; this->texLabel = label; this->shape.setTexture(this->tex); }
 	virtual sf::Texture* getTexture() { return this->tex; }
 
 	virtual void setShape(sf::RectangleShape s) { this->shape = s; }
@@ -70,6 +72,13 @@ public:
 	virtual void setTarget(sf::Vector2f n) { this->target = n; }
 	virtual sf::Vector2f getTarget() { return this->target; }
 
-	virtual void Update() = 0;
+	virtual void addTexture(std::string label, sf::Texture &i) 
+	{
+		sf::Texture *t = new sf::Texture(i);
+		this->textures[label] = t;
+	}
+	virtual std::string getCurrentTextureLabel() { return this->texLabel; }
+
+	virtual void Update(float dt) = 0;
 	virtual void Render() = 0;
 };

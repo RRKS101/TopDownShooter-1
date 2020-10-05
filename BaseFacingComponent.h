@@ -15,7 +15,12 @@ public:
 		
 	}
 protected:
-	virtual void Update() = 0;
+	virtual void Update(float dt) = 0;
 	virtual void Render() = 0;
+
+	virtual float getAngle(sf::Vector2f a, sf::Vector2f b)
+	{
+		return 360 - fmod(270 - atan2(b.y - a.y, b.x - a.x) * (180 / 3.14159265358979), 360);
+	}
 
 };

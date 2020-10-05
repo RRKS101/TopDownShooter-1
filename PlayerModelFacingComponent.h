@@ -1,5 +1,6 @@
 #include "BaseFacingComponent.h"
 
+
 class PlayerModelFacingComponent : public BaseFacingComponent
 {
 private:
@@ -15,35 +16,26 @@ public:
 	
 	}
 	
-	virtual void Update() 
+	virtual void Update(float dt) 
 	{
-		sf::RectangleShape* s = owner->getShape();
-		sf::IntRect sp = s->getTextureRect();
 		sf::Vector2f p1 = owner->getPos();
 		sf::Vector2f p2 = owner->getTarget();
 
-		p1.x += s->getSize().x / 2;
-		p1.y += s->getSize().y / 2;
+		p1.x += owner->getShape()->getSize().x / 2;
+		p1.y += owner->getShape()->getSize().y / 2;
 
 		float grad = getAngle(p1, p2);
 
+		//std::cout << grad << " | " << p1.x << ", " << p1.y << " | " << p2.x << ", " << p2.y << std::endl;				<<====== DEBUG LINE
 
-#ifdef FACING_COMPONENT_DEBUG
-		std::cout << grad << " | " << p1.x << ", " << p1.y << " | " << p2.x << ", " << p2.y << std::endl;
-#endif
-
-
-		if (grad < 0.08f)
+		if (grad > 180)
 		{
-			if (s->getTextureRect().width > 0) sp.width = -s->getSize().x;
+			if (owner->getCurrentTextureLabel() != "FACE_LEFT") this->owner->setTexture("FACE_LEFT");
 		}
-		else if (grad > 0.08f)
+		else if (grad > 0 && grad < 180)
 		{
-			if (s->getTextureRect().width <= 0) sp.width = -s->getSize().x;
+			if(owner->getCurrentTextureLabel() != "FACE_RIGHT") this->owner->setTexture("FACE_RIGHT");
 		}
-
-
-		s->setTextureRect(sp);
 	}
 
 	virtual void Render() 

@@ -12,6 +12,6 @@ public:
 	BaseComponent(Entity* o) { this->owner = o; }
 	virtual ~BaseComponent() { }
 
-	virtual void Update() = 0;
+	virtual void Update(float dt) = 0;
 	virtual void Render() = 0;
 };
